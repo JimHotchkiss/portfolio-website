@@ -23,6 +23,18 @@
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss/project_manager",
         "gitUrlApi": null
+      },
+      {
+        "id": "js",
+        "technologies": [
+          "<SiReact/>",
+          "<DiRuby />"
+        ],
+        "title": "Vegan Cow ",
+        "imgUrl": "../../images/js.png",
+        "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
+        "gitUrlClient": "https://github.com/JimHotchkiss/The_Vegan_Cow",
+        "gitUrlApi": null
       }
     ]
   }

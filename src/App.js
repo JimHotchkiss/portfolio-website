@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import data from './data/projectData.json'
 import Hero from './components/hero/Hero'
 import Projects from './components/projects/Projects'
@@ -11,14 +11,11 @@ function App() {
   const [isRubyBtn, setIsRubyBtn] = useState(false)
   const [isJsBtn, setIsJsBtn] = useState(false)
   const [isHtmlBtn, setIsHtmlBtn] = useState(false)
-  const [projectsData, setProjectsData] = useState({})
   const [dataId, setDataId] = useState('')
-
-  useEffect(() => {
-    setProjectsData(data)
-  })
-
+  const [projectsData, setProjectsData] = useState(data)
+  
   const resetBtns = (dataId) =>{
+    console.log(dataId)
     setDataId(dataId)
     setIsReactBtn(false)
     setIsRubyBtn(false)
@@ -58,7 +55,7 @@ function App() {
         isHtmlBtn={isHtmlBtn}
         handleBtn={handleBtn}
         darkMode={darkMode}/>
-        {isReactBtn && <ProjectCard dataId={dataId} projectsData={projectsData}/> }
+        {dataId && <ProjectCard dataId={dataId} projectsData={projectsData}/> }
       
     </>
   );
