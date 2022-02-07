@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import data from './data/projectData.json'
 import Hero from './components/hero/Hero'
 import Projects from './components/projects/Projects'
@@ -11,9 +11,15 @@ function App() {
   const [isRubyBtn, setIsRubyBtn] = useState(false)
   const [isJsBtn, setIsJsBtn] = useState(false)
   const [isHtmlBtn, setIsHtmlBtn] = useState(false)
+  const [projectsData, setProjectsData] = useState({})
+  const [dataId, setDataId] = useState('')
+
+  useEffect(() => {
+    setProjectsData(data)
+  })
 
   const resetBtns = (dataId) =>{
-    getProjectData(dataId)
+    setDataId(dataId)
     setIsReactBtn(false)
     setIsRubyBtn(false)
     setIsJsBtn(false)
@@ -36,11 +42,6 @@ function App() {
     resetBtns(dataId)     
   }
 
-  const getProjectData = dataId => {
-    const projectsData = data.data
-    projectsData.map(project => console.log(project.technologies[0], dataId))
-
-  }
   const handleDarkMode = () => {
     setDarkMode(!darkMode)
   }
@@ -57,7 +58,7 @@ function App() {
         isHtmlBtn={isHtmlBtn}
         handleBtn={handleBtn}
         darkMode={darkMode}/>
-        {isReactBtn && <ProjectCard /> }
+        {isReactBtn && <ProjectCard dataId={dataId} projectsData={projectsData}/> }
       
     </>
   );
