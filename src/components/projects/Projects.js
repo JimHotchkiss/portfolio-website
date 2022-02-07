@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from '../common/Button'
-import { MdDarkMode } from "react-icons/md"
 import { SiReact, SiJavascript, SiHtml5 } from "react-icons/si"
 import { DiRuby } from "react-icons/di"
 
 
-const Projects = ({ darkMode, handleBtn, isButton }) => {
+const Projects = ({ darkMode, handleBtn, isReactBtn, isRubyBtn, isJsBtn, isHtmlBtn }) => {
 
     const siReact = <SiReact size={30}/>
     const diRuby = <DiRuby size={30} />
@@ -16,27 +15,36 @@ const Projects = ({ darkMode, handleBtn, isButton }) => {
         <h2 className='pt-4 mb-4'>Projects</h2>
         <div className='content-align grid grid-rows-2 grid-flow-col gap-3'>
             <Button 
+                dataId="react"
                 handleBtn={handleBtn}
-                isButton={isButton}
+                isButton={isReactBtn}
                 btnIcon={siReact}
                 iconText="Lead Tracker"
+                darkMode={darkMode}
                 />
             <Button
+                dataId="js"
                 handleBtn={handleBtn} 
-                isButton={isButton}
+                isButton={isJsBtn}
                 btnIcon={siJS}
-                iconText="Vegan Cow"/>
+                iconText="Vegan Cow"
+                darkMode={darkMode}
+                />
             <Button
+                dataId="ruby"  
                 handleBtn={handleBtn} 
-                isButton={isButton}
+                isButton={isRubyBtn}
                 btnIcon={diRuby}
                 iconText="Manager"
+                darkMode={darkMode}
                />
             <Button 
+                dataId="html"
                 handleBtn={handleBtn}
-                isButton={isButton}
+                isButton={isHtmlBtn}
                 btnIcon={siHtml}
-                iconText="Tech Support"/>
+                iconText="Tech Support"
+                darkMode={darkMode}/>
         </div>
     </div>);
 };

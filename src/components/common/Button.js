@@ -1,16 +1,17 @@
-const Button = ({btnIcon, iconText, isButton, handleBtn}) => {
+const Button = ({btnIcon, iconText, isButton, handleBtn, dataId, darkMode}) => {
 
   return (
     <div 
-      onClick={handleBtn}
-      className={isButton ? 'dark-btn' : 'light-btn'}>
+      data-id={dataId}
+      onClick={() => handleBtn(dataId)}
+      className={isButton ? 'dark-btn' : darkMode ? 'dark-mode-btn' : 'light-btn'}>
       <button 
         className={isButton ? 'light-btn-icon' : 'dark-btn-icon'}
          >
        {btnIcon}
       </button>
       <div>
-        <p>{iconText}</p>
+        <p className="font-light text-xs pt-1">{iconText}</p>
       </div>
     </div>
   
