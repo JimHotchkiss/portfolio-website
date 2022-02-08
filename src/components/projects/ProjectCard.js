@@ -35,14 +35,9 @@ const ProjectCard = ({ projectsData, dataId }) => {
                     <p className="mt-2 text-gray-600">{project.description}</p>
                   </div>
                   <div className='flex text-react_blue mt-4'>
-                    <div>{project.technologies.includes('react') ? siReact : null} {project.technologies.includes('redux') ? siRedux : null} </div>
-                    <div>{project.technologies.includes('react') ? siReact : project.technologies.includes('redux') ? siRedux : project.technologies.includes('html') ? siHtml : project.technologies.includes('rails') ? siRubyonrails : null}</div>
-                    <div>{project.technologies.includes('react') ? siReact : project.technologies.includes('redux') ? siRedux : project.technologies.includes('html') ? siHtml : project.technologies.includes('rails') ? siRubyonrails : null}</div>
-                    <div>{project.technologies.includes('react') ? siReact : project.technologies.includes('redux') ? siRedux : project.technologies.includes('html') ? siHtml : project.technologies.includes('rails') ? siRubyonrails : null}</div>
-                    <div>{project.technologies.includes('react') ? siReact : project.technologies.includes('redux') ? siRedux : project.technologies.includes('html') ? siHtml : project.technologies.includes('rails') ? siRubyonrails : null}</div>
-                    <div>{project.technologies.includes('react') ? siReact : project.technologies.includes('redux') ? siRedux : project.technologies.includes('html') ? siHtml : project.technologies.includes('rails') ? siRubyonrails : null}</div>
-                    <div>{project.technologies.includes('react') ? siReact : project.technologies.includes('redux') ? siRedux : project.technologies.includes('html') ? siHtml : project.technologies.includes('rails') ? siRubyonrails : null}</div>
-                    <div>{project.technologies.includes('react') ? siReact : project.technologies.includes('redux') ? siRedux : project.technologies.includes('html') ? siHtml : project.technologies.includes('rails') ? siRubyonrails : null}</div>
+                    {project.technologies.map(technology => {
+                      return <div>{technology}</div>
+                    })}
                   </div>
                   <div className="flex justify-end mt-4">
                     <a target="_blank" rel="noreferrer" href={project.liveDemo ? project.liveDemo : project.gitUrlClient} className="text-xl font-medium text-indigo-500">{project.liveDemo ? 'Live Demo' : 'Github'}</a>
