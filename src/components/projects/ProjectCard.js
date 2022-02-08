@@ -34,9 +34,26 @@ const ProjectCard = ({ projectsData, dataId }) => {
                     <h2 className="text-gray-800 text-3xl font-semibold">{project.title}</h2>
                     <p className="mt-2 text-gray-600">{project.description}</p>
                   </div>
-                  <div className='flex text-react_blue mt-4'>
+                  <div className='flex justify-around text-react_blue mt-4'>
                     {project.technologies.map(technology => {
-                      return <div>{technology}</div>
+                      if (technology === 'rails') {
+                        return <div key={Math.random()}>{siReact}</div>
+                      } else if (technology === 'redux') {
+                        return <div key={Math.random()}>{siRedux}</div>
+                      } else if (technology === 'rails') {
+                        return <div key={Math.random()}>{siRubyonrails}</div>
+                      } else if (technology === 'materialui') {
+                        return <div key={Math.random()}>{siMaterialui}</div>
+                      } else if (technology === 'tailwind') {
+                        return <div key={Math.random()}>{siTailwindcss}</div>
+                      } else if (technology === 'css') {
+                        return <div key={Math.random()}>{siCss3}</div>
+                      } else if (technology === 'javascript') {
+                        return <div key={Math.random()}>{siJS}</div>
+                      } else if (technology === 'html') {
+                        return <div key={Math.random()}>{siHtml}</div>
+                      }
+                      
                     })}
                   </div>
                   <div className="flex justify-end mt-4">

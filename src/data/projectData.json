@@ -7,7 +7,7 @@
           "redux",
           "html",
           "rails",
-          "materialUi"
+          "materialui"
         ],
         "title": "Lead Tracker",
         "imgUrl": "../../images/react.svg",
