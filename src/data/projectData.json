@@ -1,40 +1,63 @@
 {
     "data": [
       {
-        "id": "react",
+        "id": "one",
         "technologies": [
-          "<SiReact/>",
-          "<DiRuby />"
+          "react",
+          "redux",
+          "html",
+          "rails",
+          "materialUi"
         ],
         "title": "Lead Tracker",
         "imgUrl": "../../images/react.svg",
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss/lead-tracker-client",
-        "gitUrlApi": "https://github.com/JimHotchkiss/lead-tracker-api"
+        "gitUrlApi": "https://github.com/JimHotchkiss/lead-tracker-api",
+        "liveDemo": null
       },
       {
-        "id": "ruby",
+        "id": "two",
         "technologies": [
-          "<SiReact/>",
-          "<DiRuby />"
+          "rails",
+          "tailwind",
+          "html"
         ],
         "title": "Project Manager",
         "imgUrl": "../../images/react.svg",
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss/project_manager",
-        "gitUrlApi": null
+        "gitUrlApi": null,
+        "liveDemo": null
       },
       {
-        "id": "js",
+        "id": "three",
         "technologies": [
-          "<SiReact/>",
-          "<DiRuby />"
+          "html",
+          "rails",
+          "css",
+          "javascript"
         ],
         "title": "Vegan Cow ",
         "imgUrl": "../../images/js.png",
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss/The_Vegan_Cow",
-        "gitUrlApi": null
+        "gitUrlApi": null,
+        "liveDemo": null
+      },
+      {
+        "id": "four",
+        "technologies": [
+          "html",
+          "css",
+          "javascript"
+        ],
+        "title": "Tech Support App",
+        "imgUrl": "../../images/js.png",
+        "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
+        "gitUrlClient": null,
+        "gitUrlApi": null,
+        "liveDemo": "https://secure-basin-53601.herokuapp.com/"
       }
     ]
   }

@@ -7,35 +7,36 @@ import ProjectCard from './components/projects/ProjectCard';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
-  const [isReactBtn, setIsReactBtn] = useState(false)
-  const [isRubyBtn, setIsRubyBtn] = useState(false)
-  const [isJsBtn, setIsJsBtn] = useState(false)
-  const [isHtmlBtn, setIsHtmlBtn] = useState(false)
+  const [isOneBtn, setIsOneBtn] = useState(false)
+  const [isTwoBtn, setIsTwoBtn] = useState(false)
+  const [isThreeBtn, setIsThreeBtn] = useState(false)
+  const [isFourBtn, setIsFourBtn] = useState(false)
   const [dataId, setDataId] = useState('')
   const [projectsData, setProjectsData] = useState(data)
+  // const [btnToggle, setBtnToggle] = useState(false)
   
   const resetBtns = (dataId) =>{
-    console.log(dataId)
     setDataId(dataId)
-    setIsReactBtn(false)
-    setIsRubyBtn(false)
-    setIsJsBtn(false)
-    setIsHtmlBtn(false)
+    setIsOneBtn(false)
+    setIsTwoBtn(false)
+    setIsThreeBtn(false)
+    setIsFourBtn(false)
     setBtn(dataId)
   }
 
   const setBtn = (dataId) => {
-    if(dataId === 'react') {
-      setIsReactBtn(!isReactBtn)
-    } else if (dataId === 'ruby') {
-      setIsRubyBtn(!isRubyBtn)
-    } else if (dataId === 'js') {
-      setIsJsBtn(!isJsBtn)
+    if(dataId === 'one') {
+      setIsOneBtn(!isOneBtn)
+    } else if (dataId === 'two') {
+      setIsTwoBtn(!isTwoBtn)
+    } else if (dataId === 'three') {
+      setIsThreeBtn(!isThreeBtn)
     } else {
-      setIsHtmlBtn(!isHtmlBtn)
+      setIsFourBtn(!isFourBtn)
     }
   }
   const handleBtn = (dataId) => {
+    // setBtnToggle(!btnToggle)
     resetBtns(dataId)     
   }
 
@@ -49,10 +50,10 @@ function App() {
         handleDarkMode={handleDarkMode}
       />
       <Projects 
-        isReactBtn={isReactBtn}
-        isRubyBtn={isRubyBtn}
-        isJsBtn={isJsBtn}
-        isHtmlBtn={isHtmlBtn}
+        isOneBtn={isOneBtn}
+        isTwoBtn={isTwoBtn}
+        isThreeBtn={isThreeBtn}
+        isFourBtn={isFourBtn}
         handleBtn={handleBtn}
         darkMode={darkMode}/>
         {dataId && <ProjectCard dataId={dataId} projectsData={projectsData}/> }
