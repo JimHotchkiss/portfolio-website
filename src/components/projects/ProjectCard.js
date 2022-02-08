@@ -34,24 +34,24 @@ const ProjectCard = ({ projectsData, dataId }) => {
                     <h2 className="text-gray-800 text-3xl font-semibold">{project.title}</h2>
                     <p className="mt-2 text-gray-600">{project.description}</p>
                   </div>
-                  <div className='flex justify-around text-react_blue mt-4'>
+                  <div className='flex justify-around  mt-4'>
                     {project.technologies.map(technology => {
-                      if (technology === 'rails') {
-                        return <div key={Math.random()}>{siReact}</div>
+                      if (technology === 'react') {
+                        return <div key={Math.random()} className="text-react_blue">{siReact}</div>
                       } else if (technology === 'redux') {
-                        return <div key={Math.random()}>{siRedux}</div>
+                        return <div key={Math.random()} className="text-indigo-600">{siRedux}</div>
                       } else if (technology === 'rails') {
-                        return <div key={Math.random()}>{siRubyonrails}</div>
+                        return <div key={Math.random()} className="text-red-600">{siRubyonrails}</div>
                       } else if (technology === 'materialui') {
-                        return <div key={Math.random()}>{siMaterialui}</div>
+                        return <div key={Math.random()} className="text-blue-600">{siMaterialui}</div>
                       } else if (technology === 'tailwind') {
-                        return <div key={Math.random()}>{siTailwindcss}</div>
+                        return <div key={Math.random()} className="text-teal-300">{siTailwindcss}</div>
                       } else if (technology === 'css') {
-                        return <div key={Math.random()}>{siCss3}</div>
+                        return <div key={Math.random()} className="text-cyan-400">{siCss3}</div>
                       } else if (technology === 'javascript') {
-                        return <div key={Math.random()}>{siJS}</div>
+                        return <div key={Math.random()} className="text-yellow-300">{siJS}</div>
                       } else if (technology === 'html') {
-                        return <div key={Math.random()}>{siHtml}</div>
+                        return <div key={Math.random()} className="text-orange-600">{siHtml}</div>
                       }
                       
                     })}
