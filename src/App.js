@@ -56,7 +56,7 @@ function App() {
         darkMode={darkMode}
         handleDarkMode={handleDarkMode}
       />
-      <div className="lg:flex lg:container">
+      <div className="lg:flex container">
         <Projects 
           isOneBtn={isOneBtn}
           isTwoBtn={isTwoBtn}
