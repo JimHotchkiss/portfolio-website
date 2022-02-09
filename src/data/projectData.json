@@ -55,7 +55,7 @@
         "title": "Tech Support App",
         "imgUrl": "../../images/js.png",
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
-        "gitUrlClient": null,
+        "gitUrlClient": "https://github.com/JimHotchkiss",
         "gitUrlApi": null,
         "liveDemo": null
       }

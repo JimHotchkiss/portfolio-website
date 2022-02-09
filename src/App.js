@@ -4,6 +4,7 @@ import data from './data/projectData.json'
 import Hero from './components/hero/Hero'
 import Projects from './components/projects/Projects'
 import ProjectCard from './components/projects/ProjectCard';
+import About from './components/about/About';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -64,6 +65,7 @@ function App() {
           handleBtn={handleBtn}
           darkMode={darkMode}/>
           {currentBtn === "" ? null : <ProjectCard dataId={dataId} projectsData={projectsData}/> }
+        <About />
       </div>    
     </>
   );
