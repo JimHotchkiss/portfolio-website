@@ -2,27 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
- background-color: #1e293b
-}
-
 
 @layer components {
-  .light-btn{
+  .dark-btn{
     @apply flex flex-col items-center justify-center bg-primary text-react_blue p-4 rounded  transition-all duration-300 ease-linear cursor-pointer
   }
-  .dark-btn{
+  .light-btn{
     @apply flex flex-col items-center justify-center bg-react_blue p-4 rounded  transition-all duration-300 ease-linear cursor-pointer
   }
   .dark-mode-btn {
-    @apply flex flex-col items-center justify-center bg-secondary text-white p-4 rounded  transition-all duration-300 ease-linear cursor-pointer
-  }
-  .dark-btn-icon{
-    @apply flex items-center justify-center  text-red-500 rounded-xl
-    transition-all duration-300 ease-linear cursor-pointer;
+    @apply flex flex-col items-center justify-center bg-react_blue text-primary p-4 rounded  transition-all duration-300 ease-linear cursor-pointer
   }
   .light-btn-icon{
-    @apply flex items-center justify-center text-primary rounded 
+    @apply flex items-center justify-center  text-secondary rounded-xl
+    transition-all duration-300 ease-linear cursor-pointer;
+  }
+  .dark-btn-icon{
+    @apply flex items-center justify-center text-red-500 rounded 
     transition-all duration-300 ease-linear cursor-pointer;
   }
   .transition-class {

@@ -11,7 +11,7 @@ const Projects = ({ darkMode, handleBtn, isOneBtn, isTwoBtn, isThreeBtn, isFourB
     const siJS = <SiJavascript size={30} />
 
   return (
-    <div className={darkMode ? 'bg-slate-100 text-primary pb-10' : 'bg-secondary text-white pb-10'}>
+    <div className={darkMode ? 'bg-slate-100 text-primary pb-12 container' : 'bg-secondary text-white pb-12 container'}>
         <h2 className='pt-4 mb-4'>Projects</h2>
         <div className='content-align grid grid-rows-2 grid-flow-col gap-3'>
             <Button 

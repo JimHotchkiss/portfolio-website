@@ -2,6 +2,7 @@ import React from 'react';
 import react from '../../images/react.svg'
 import rails from '../../images/rails.svg'
 import js from '../../images/js.png'
+import leadTrackergif from '../../images/lead-tracker.gif'
 import { SiReact, SiJavascript, SiHtml5, SiMaterialui, SiTailwindcss, SiRubyonrails, SiCss3, SiRedux } from "react-icons/si"
 import { DiRuby } from "react-icons/di"
 
@@ -22,9 +23,10 @@ const ProjectCard = ({ projectsData, dataId }) => {
         projectsData.data.map(project => {
             if (project.id === dataId) {
               return(
-                <div
+                <div className='bg-primary pt-8'>
+                  <div
                   key={dataId}
-                  className='py-4 px-8 bg-primary shadow-lg rounded my-8 cursor-pointer'>
+                  className='bg-secondary shadow-lg pt-2 container rounded w-11/12'>
                   <div className="flex justify-centermd:justify-end -mt-16">
                     <img 
                       className="w-20 h-20 object-cover ml-56 bg-white rounded-full border-2 border-indigo-500" 
@@ -33,6 +35,9 @@ const ProjectCard = ({ projectsData, dataId }) => {
                   <div>
                     <h2 className="text-white text-3xl font-semibold">{project.title}</h2>
                     <p className="mt-2 text-gray-500">{project.description}</p>
+                  </div>
+                  <div className={project.title === 'Lead Tracker' ? 'pt-4 pb-4' : 'hidden'}>
+                    <img src={leadTrackergif} alt="Lead Tracker" />
                   </div>
                   <div className='flex justify-around  mt-4'>
                     {project.technologies.map(technology => {
@@ -56,10 +61,14 @@ const ProjectCard = ({ projectsData, dataId }) => {
                       
                     })}
                   </div>
-                  <div className="flex justify-end mt-4">
+                  <div className="flex justify-end mt-4 pb-4">
                     <a target="_blank" rel="noreferrer" href={project.liveDemo ? project.liveDemo : project.gitUrlClient} className="text-xl font-medium text-indigo-500">{project.liveDemo ? 'Live Demo' : project.title === 'Tech Support App' ? null : 'Github'}</a>
                   </div>
                 </div>
+                  
+
+                </div>
+                
               )
               
             }

@@ -1,13 +1,16 @@
 const Button = ({btnIcon, iconText, isButton, handleBtn, dataId, darkMode}) => {
 
+
+  // isButton means it's clicked 
   return (
     <div 
       data-id={dataId}
       onClick={() => handleBtn(dataId)}
-      className={isButton ? 'dark-btn' : darkMode ? 'dark-mode-btn' : 'light-btn'}>
+      className={isButton ? 'light-btn' : darkMode ? 'dark-mode-btn' : 'dark-btn'}>
       <button 
-        className={isButton ? 'light-btn-icon' : 'dark-btn-icon'}
+        className={isButton ? 'light-btn-icon' : 'dark-btn-icon' }
          >
+           {console.log(darkMode)}
        {btnIcon}
       </button>
       <div>
