@@ -1,5 +1,6 @@
 import React from 'react'
 import profile from './profile2.JPEG'
+import profile2 from './profile3.jpg'
 
 const About = () => {
   return (
