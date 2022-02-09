@@ -28,7 +28,7 @@
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss/project_manager",
         "gitUrlApi": null,
-        "liveDemo": null
+        "liveDemo": "https://secure-basin-53601.herokuapp.com/"
       },
       {
         "id": "three",
@@ -57,7 +57,7 @@
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": null,
         "gitUrlApi": null,
-        "liveDemo": "https://secure-basin-53601.herokuapp.com/"
+        "liveDemo": null
       }
     ]
   }

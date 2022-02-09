@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../common/Button'
-import { SiReact, SiJavascript, SiHtml5, SiMaterialui, SiTailwindcss, SiRubyonrails, SiCss3} from "react-icons/si"
+import { SiReact, SiJavascript } from "react-icons/si"
 import { DiRuby } from "react-icons/di"
 
 
@@ -9,11 +9,7 @@ const Projects = ({ darkMode, handleBtn, isOneBtn, isTwoBtn, isThreeBtn, isFourB
     const siReact = <SiReact size={30}/>
     const diRuby = <DiRuby size={30} />
     const siJS = <SiJavascript size={30} />
-    const siHtml = <SiHtml5 size={30} />
-    const siMaterialui = <SiMaterialui size={30} />
-    const siTailwindcss = <SiTailwindcss size={30} />
-    const siRubyonrails = <SiRubyonrails size={30} />
-    const siCss3 = <SiCss3 size={30}/>
+
   return (
     <div className={darkMode ? 'bg-slate-100 text-primary container pb-10' : 'bg-secondary text-white container pb-10'}>
         <h2 className='pt-4 mb-4'>Projects</h2>

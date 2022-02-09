@@ -7,13 +7,13 @@ const HeroDrkModeIcon = ({darkMode, handleDarkMode}) => {
         {darkMode ?  
             <MdDarkMode 
                 onClick={handleDarkMode}
-                size={22} 
-                className= {"text-react_blue ml-32 pt-1"}
+                size={30} 
+                className= {"text-react_blue pt-1"}
             /> : 
             <MdOutlineLightMode 
                 onClick={handleDarkMode}
-                size={22}
-                className='text-white ml-32 pt-1'/>}
+                size={30}
+                className='text-white pt-1'/>}
        
         </>
   );

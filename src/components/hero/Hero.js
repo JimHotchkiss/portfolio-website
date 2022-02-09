@@ -6,7 +6,7 @@ import HeroImage from './HeroImage';
 const Hero = ({darkMode, handleDarkMode}) => {
   return (
     <div className={darkMode ? 'bg-slate-100' : 'bg-gradient-to-r from-primary to-secondary'}>
-      <div className='flex container pt-4'>
+      <div className='flex justify-between container pt-4'>
         <HeroTitle darkMode={darkMode}/>
         <HeroDrkModeIcon 
           handleDarkMode={handleDarkMode}

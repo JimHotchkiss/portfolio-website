@@ -25,7 +25,6 @@ const ProjectCard = ({ projectsData, dataId }) => {
                   key={dataId}
                   className='max-w-sm py-4 px-8 bg-slate-100 shadow-lg rounded my-8 cursor-pointer'>
                   <div className="flex justify-centermd:justify-end -mt-16">
-                  {console.log(project.technologies)}
                     <img 
                       className="w-20 h-20 object-cover ml-56 bg-white rounded-full border-2 border-indigo-500" 
                       src={dataId === 'one' ? react : dataId === 'two' ? rails : dataId === 'three' ? js : js} alt={project.title}/>

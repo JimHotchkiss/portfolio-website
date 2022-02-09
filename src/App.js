@@ -13,9 +13,15 @@ function App() {
   const [isFourBtn, setIsFourBtn] = useState(false)
   const [dataId, setDataId] = useState('')
   const [projectsData, setProjectsData] = useState(data)
+  const [currentBtn, setCurrentBtn] = useState('')
   // const [btnToggle, setBtnToggle] = useState(false)
   
   const resetBtns = (dataId) =>{
+    if(dataId === currentBtn) {
+      setCurrentBtn("")
+    } else {
+      setCurrentBtn(dataId)
+    }
     setDataId(dataId)
     setIsOneBtn(false)
     setIsTwoBtn(false)
@@ -49,15 +55,16 @@ function App() {
         darkMode={darkMode}
         handleDarkMode={handleDarkMode}
       />
-      <Projects 
-        isOneBtn={isOneBtn}
-        isTwoBtn={isTwoBtn}
-        isThreeBtn={isThreeBtn}
-        isFourBtn={isFourBtn}
-        handleBtn={handleBtn}
-        darkMode={darkMode}/>
-        {dataId && <ProjectCard dataId={dataId} projectsData={projectsData}/> }
-      
+      <div className="lg:flex lg:container">
+        <Projects 
+          isOneBtn={isOneBtn}
+          isTwoBtn={isTwoBtn}
+          isThreeBtn={isThreeBtn}
+          isFourBtn={isFourBtn}
+          handleBtn={handleBtn}
+          darkMode={darkMode}/>
+          {currentBtn === "" ? null : <ProjectCard dataId={dataId} projectsData={projectsData}/> }
+      </div>    
     </>
   );
 }
