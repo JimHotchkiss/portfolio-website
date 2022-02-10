@@ -4,13 +4,12 @@ import rails from '../../images/rails.svg'
 import js from '../../images/js.png'
 import leadTrackergif from '../../images/lead-tracker.gif'
 import { SiReact, SiJavascript, SiHtml5, SiMaterialui, SiTailwindcss, SiRubyonrails, SiCss3, SiRedux } from "react-icons/si"
-import { DiRuby } from "react-icons/di"
 
 
-const ProjectCard = ({ projectsData, dataId }) => {
+
+const ProjectCard = ({ projectsData, dataId, darkMode }) => {
 
   const siReact = <SiReact size={30}/>
-  const diRuby = <DiRuby size={30} />
   const siJS = <SiJavascript size={30} />
   const siHtml = <SiHtml5 size={30} />
   const siMaterialui = <SiMaterialui size={30} />
@@ -24,12 +23,12 @@ const ProjectCard = ({ projectsData, dataId }) => {
             if (project.id === dataId) {
               return(
                 <div 
-                  className='bg-primary pt-8' 
+                  className={darkMode ? 'bg-white pt-8' :'bg-primary pt-8'} 
                   key={Math.random()}>
                   <div
                     key={Math.random()}
-                    className='md:max-w-[60%] max-w-[91%] bg-secondary shadow-lg pt-2 container rounded'>
-                  <div className="flex justify-center -mt-16">
+                  className={darkMode ? 'md:max-w-[60%] max-w-[91%] bg-react_blue shadow-lg pt-2 container rounded' : 'md:max-w-[60%] max-w-[91%] bg-secondary shadow-lg pt-2 container rounded'}>
+                <div className="flex justify-center -mt-16">
                     <img 
                       className="w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-indigo-500" 
                       src={dataId === 'one' ? react : dataId === 'two' ? rails : dataId === 'three' ? js : js} alt={project.title}/>

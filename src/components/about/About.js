@@ -1,43 +1,46 @@
 import React from 'react'
 import profile from './profile2.JPEG'
-import { SiReact, SiJavascript, SiHtml5, SiMaterialui, SiTailwindcss, SiRubyonrails, SiCss3, SiRedux } from "react-icons/si"
+import { SiReact, SiJavascript, SiHtml5, SiRubyonrails, SiCss3 } from "react-icons/si"
 import { DiRuby } from "react-icons/di"
+import { FaLinkedin } from "react-icons/fa"
+import { AiFillGithub } from "react-icons/ai"
 
-const About = () => {
+
+const About = ({ darkMode }) => {
 
   const siReact = <SiReact size={30}/>
   const diRuby = <DiRuby size={30} />
   const siJS = <SiJavascript size={30} />
   const siHtml = <SiHtml5 size={30} />
-  const siMaterialui = <SiMaterialui size={30} />
-  const siTailwindcss = <SiTailwindcss size={30} />
   const siRubyonrails = <SiRubyonrails size={30} />
   const siCss3 = <SiCss3 size={30}/>
-  const siRedux = <SiRedux size={30}/>
+  const faLinkedin = <FaLinkedin size={30} />
+  const aiFillGithub = <AiFillGithub size={30} />
 
   return (
-    <div className='bg-primary min-w-full pt-4 pb-4'>
+    <div className={darkMode ? 'bg-white min-w-full pt-4 pb-4' :'bg-primary min-w-full pt-4 pb-4'}>
       <div className='container'>
         <div>
-          <h2 className='text-white'>About Me</h2>
+          <h2 className={darkMode ? 'text-secondary' : 'text-white'}>About Me</h2>
         </div>
-        <div className='py-4 px-4 bg-secondary shadow-lg rounded my-4 cursor-pointer'>
+        <div className={darkMode ? 'py-4 px-4 bg-react_blue shadow-lg rounded my-4' : 'py-4 px-4 bg-secondary shadow-lg rounded my-4'}>
             <div className="flex justify-centermd:justify-end -mt-16">
                 <img 
-                    className="w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-react_blue" 
+                    className={darkMode ? 'w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-secondary' : 'w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-react_blue' }
                     src={profile} alt="Profile"/>
             </div>
             <div>
                 <h2 className="text-white text-3xl font-semibold">Jimmy Hotchkiss</h2>
-                <p className="mt-2 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit nostrum. Corporis ad, dolorum aspernatur vitae blanditiis assumenda hic odio necessitatibus fugiat modi eius magnam ullam inventore id recusandae omnis?</p>
+                <p className="mt-2 text-gray-500">I have always been interested in the “How?” and “Why?” questions, and I have always been a creator: From the arts to software, I am at my best, when I'm creating. And software development combines these parts of me into my professional ‘sweet-spot’.</p>
             </div>
                 <div className='flex justify-around  text-gray-500 mt-4'>
-                    <div className='text-red-600'>{diRuby}</div> 
-                    <div className='text-red-600'>{siRubyonrails}</div>
-                    <div className='text-cyan-400'>{siHtml}</div>
-                    <div className='text-orange-600'>{siCss3}</div>
-                    <div className='text-yellow-300'>{siJS}</div>
-                    <div className='text-react_blue'>{siReact}</div>
+                    <div>
+                      <a href="https://www.linkedin.com/in/jimmyhotchkiss/" target="_blank" rel="noreferrer" className='text-linkedin_blue' size={30}>{faLinkedin}</a>
+                    </div> 
+                    <div>
+                      <a href="https://github.com/JimHotchkiss" target="_blank" rel="noreferrer" className='text-gray-100' size={30}>{aiFillGithub}</a>
+                    </div> 
+                
                 </div>
                 <div className="flex justify-end mt-4">
                   <a target="_blank" rel="noreferrer" href="#" className="text-xl font-medium text-indigo-500">CV</a>

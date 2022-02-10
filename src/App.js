@@ -57,12 +57,13 @@ function App() {
   }
   return (
     <div className=''>
+       {console.log(currentBtn, darkMode)}
       <Hero 
         darkMode={darkMode}
         handleDarkMode={handleDarkMode}
       />
-      <div className="bg-secondary">
-        <div className=''>
+      <div className={darkMode ? 'bg-gray-100' : 'bg-secondary'}>
+        <div>
           <Projects 
             isOneBtn={isOneBtn}
             isTwoBtn={isTwoBtn}
@@ -70,10 +71,10 @@ function App() {
             isFourBtn={isFourBtn}
             handleBtn={handleBtn}
             darkMode={darkMode}/>
-            {currentBtn === "" ? null : <ProjectCard dataId={dataId} projectsData={projectsData}/> }
+            {currentBtn === "" ? null : <ProjectCard dataId={dataId} projectsData={projectsData} darkMode={darkMode}/> }
         </div>
-        <About />
-        <Footer />
+        <About darkMode={darkMode}/>
+        <Footer darkMode={darkMode}/>
       </div>    
     </div>
   );

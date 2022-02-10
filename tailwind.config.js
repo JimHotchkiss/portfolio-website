@@ -30,7 +30,8 @@ module.exports = {
       colors: {
         primary: '#0f172a',
         secondary: '#1e293b',
-        react_blue: '#63dbfb'
+        react_blue: '#63dbfb',
+        linkedin_blue: '#1064c4'
       }
     },
   },

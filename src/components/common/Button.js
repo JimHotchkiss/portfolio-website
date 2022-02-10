@@ -10,7 +10,7 @@ const Button = ({btnIcon, iconText, isButton, handleBtn, dataId, darkMode}) => {
       <button 
         className={isButton ? 'light-btn-icon' : 'dark-btn-icon' }
          >
-           {console.log(darkMode)}
+           {/* {console.log(darkMode)} */}
        {btnIcon}
       </button>
       <div>
