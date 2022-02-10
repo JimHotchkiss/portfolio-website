@@ -16,14 +16,15 @@ const About = () => {
   const siRedux = <SiRedux size={30}/>
 
   return (
-    <div className='bg-primary min-w-full container pt-4 pb-4'>
+    <div className='bg-primary min-w-full pt-4 pb-4'>
+      <div className='container'>
         <div>
-            <h2 className='text-white'>About Me</h2>
+          <h2 className='text-white'>About Me</h2>
         </div>
-        <div className='max-w-sm py-4 px-4 bg-secondary shadow-lg rounded my-4 cursor-pointer'>
+        <div className='py-4 px-4 bg-secondary shadow-lg rounded my-4 cursor-pointer'>
             <div className="flex justify-centermd:justify-end -mt-16">
                 <img 
-                    className="w-20 h-20 object-cover ml-56 bg-white rounded-full border-2 border-react_blue" 
+                    className="w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-react_blue" 
                     src={profile} alt="Profile"/>
             </div>
             <div>
@@ -38,10 +39,12 @@ const About = () => {
                     <div className='text-yellow-300'>{siJS}</div>
                     <div className='text-react_blue'>{siReact}</div>
                 </div>
-                  <div className="flex justify-end mt-4">
-                    <a target="_blank" rel="noreferrer" href="#" className="text-xl font-medium text-indigo-500">CV</a>
-                  </div>
+                <div className="flex justify-end mt-4">
+                  <a target="_blank" rel="noreferrer" href="#" className="text-xl font-medium text-indigo-500">CV</a>
+                </div>
           </div>
+
+      </div>
     </div>
   )
 }

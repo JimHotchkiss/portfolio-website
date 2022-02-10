@@ -22,6 +22,10 @@ module.exports = {
       center: true,
       padding: '1rem',
     },
+    about_container: {
+      center: true,
+      // padding: '1rem',
+    },
     extend: {
       colors: {
         primary: '#0f172a',

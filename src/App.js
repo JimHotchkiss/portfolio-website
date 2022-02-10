@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero'
 import Projects from './components/projects/Projects'
 import ProjectCard from './components/projects/ProjectCard';
 import About from './components/about/About';
+import Footer from './components/common/Footer'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -41,9 +42,13 @@ function App() {
     } else {
       setIsFourBtn(!isFourBtn)
     }
+    window.scrollTo({
+      top: 500,
+      left: 100,
+      behavior: 'smooth'
+    });
   }
   const handleBtn = (dataId) => {
-    // setBtnToggle(!btnToggle)
     resetBtns(dataId)     
   }
 
@@ -51,23 +56,26 @@ function App() {
     setDarkMode(!darkMode)
   }
   return (
-    <>
+    <div className=''>
       <Hero 
         darkMode={darkMode}
         handleDarkMode={handleDarkMode}
       />
-      <div className="">
-        <Projects 
-          isOneBtn={isOneBtn}
-          isTwoBtn={isTwoBtn}
-          isThreeBtn={isThreeBtn}
-          isFourBtn={isFourBtn}
-          handleBtn={handleBtn}
-          darkMode={darkMode}/>
-          {currentBtn === "" ? null : <ProjectCard dataId={dataId} projectsData={projectsData}/> }
+      <div className="bg-secondary">
+        <div className=''>
+          <Projects 
+            isOneBtn={isOneBtn}
+            isTwoBtn={isTwoBtn}
+            isThreeBtn={isThreeBtn}
+            isFourBtn={isFourBtn}
+            handleBtn={handleBtn}
+            darkMode={darkMode}/>
+            {currentBtn === "" ? null : <ProjectCard dataId={dataId} projectsData={projectsData}/> }
+        </div>
         <About />
+        <Footer />
       </div>    
-    </>
+    </div>
   );
 }
 
