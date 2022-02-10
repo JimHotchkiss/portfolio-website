@@ -1,6 +1,6 @@
 import React from 'react'
 import profile from './profile2.JPEG'
-import { SiReact, SiJavascript, SiHtml5, SiRubyonrails, SiCss3 } from "react-icons/si"
+import { SiReact, SiJavascript, SiHtml5, SiRubyonrails, SiCss3, SiTwitter, SiThewashingtonpost } from "react-icons/si"
 import { DiRuby } from "react-icons/di"
 import { FaLinkedin } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
@@ -16,6 +16,7 @@ const About = ({ darkMode }) => {
   const siCss3 = <SiCss3 size={30}/>
   const faLinkedin = <FaLinkedin size={30} />
   const aiFillGithub = <AiFillGithub size={30} />
+  const siTwitter = <SiTwitter size={30} />
 
   return (
     <div className={darkMode ? 'bg-white min-w-full pt-4 pb-4' :'bg-primary min-w-full pt-4 pb-4'}>
@@ -39,6 +40,9 @@ const About = ({ darkMode }) => {
                     </div> 
                     <div>
                       <a href="https://github.com/JimHotchkiss" target="_blank" rel="noreferrer" className='text-gray-100' size={30}>{aiFillGithub}</a>
+                    </div> 
+                    <div>
+                      <a href="https://twitter.com/jh8up" target="_blank" rel="noreferrer" className='text-react_blue' size={30}>{siTwitter}</a>
                     </div> 
                 
                 </div>
