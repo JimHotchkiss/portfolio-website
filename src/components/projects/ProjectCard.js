@@ -14,7 +14,7 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
   const siHtml = <SiHtml5 size={30} />
   const siMaterialui = <SiMaterialui size={30} />
   const siTailwindcss = <SiTailwindcss size={30} />
-  const siRubyonrails = <SiRubyonrails size={30} />
+  const siRubyonrails = <SiRubyonrails size={40} />
   const siCss3 = <SiCss3 size={30}/>
   const siRedux = <SiRedux size={30}/>
       return (
@@ -27,20 +27,20 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
                   key={Math.random()}>
                   <div
                     key={Math.random()}
-                  className={darkMode ? 'md:max-w-[60%] max-w-[91%] bg-react_blue shadow-lg pt-2 container rounded' : 'md:max-w-[58%] max-w-[91%] bg-secondary shadow-lg pt-2 mx-auto p-8 rounded'}>
+                  className={darkMode ? 'md:max-w-[60%] max-w-[91%] bg-react_blue shadow-lg pt-2 container rounded' : 'md:max-w-[58%] max-w-[91%] bg-secondary shadow-lg pt-2 mx-auto rounded'}>
                 <div className="flex justify-center -mt-16">
                     <img 
-                      className="w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-indigo-500" 
+                      className="w-20 h-20 object-cover ml-auto mr-4 bg-white rounded-full border-2 border-indigo-500" 
                       src={dataId === 'one' ? react : dataId === 'two' ? rails : dataId === 'three' ? js : js} alt={project.title}/>
                   </div>
-                  <div>
+                  <div className='px-4 pt-2'>
                     <h2 className="text-white text-3xl font-semibold">{project.title}</h2>
                     <p className="mt-2 text-gray-500">{project.description}</p>
                   </div>
                   <div className={project.title === 'Lead Tracker' ? 'pt-4 pb-4' : 'hidden'}>
                     <img src={leadTrackergif} alt="Lead Tracker" />
                   </div>
-                  <div className='flex justify-around  mt-4'>
+                  <div className='flex justify-around  mt-4 lg:max-w-[30%] lg:mx-auto'>
                     {project.technologies.map(technology => {
                       if (technology === 'react') {
                         return <div key={Math.random()} className="text-react_blue">{siReact}</div>
@@ -62,7 +62,7 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
                       
                     })}
                   </div>
-                  <div key={Math.random()} className="flex justify-end mt-4 pb-4">
+                  <div key={Math.random()} className="flex justify-end mt-4 pb-4 px-4">
                     <a target="_blank" rel="noreferrer" href={project.liveDemo ? project.liveDemo : project.gitUrlClient} className="text-xl font-medium text-indigo-500">{project.liveDemo ? 'Live Demo' : project.title === 'Tech Support App' ? null : 'Github'}</a>
                   </div>
                 </div>
