@@ -23,11 +23,11 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
             if (project.id === dataId) {
               return(
                 <div 
-                  className={darkMode ? 'bg-white pt-8' :'bg-primary pt-8'} 
+                  className={darkMode ? 'bg-white pt-8 pb-8' :'bg-primary pt-8 pb-8'} 
                   key={Math.random()}>
                   <div
                     key={Math.random()}
-                  className={darkMode ? 'md:max-w-[60%] max-w-[91%] bg-react_blue shadow-lg pt-2 container rounded' : 'md:max-w-[60%] max-w-[91%] bg-secondary shadow-lg pt-2 container rounded'}>
+                  className={darkMode ? 'md:max-w-[60%] max-w-[91%] bg-react_blue shadow-lg pt-2 container rounded' : 'md:max-w-[58%] max-w-[91%] bg-secondary shadow-lg pt-2 mx-auto p-8 rounded'}>
                 <div className="flex justify-center -mt-16">
                     <img 
                       className="w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-indigo-500" 

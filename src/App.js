@@ -63,7 +63,8 @@ function App() {
         handleDarkMode={handleDarkMode}
       />
       <div className={darkMode ? 'bg-gray-100' : 'bg-secondary'}>
-        <div>
+        <About darkMode={darkMode}/>
+        <div className=''>
           <Projects 
             isOneBtn={isOneBtn}
             isTwoBtn={isTwoBtn}
@@ -73,7 +74,6 @@ function App() {
             darkMode={darkMode}/>
             {currentBtn === "" ? null : <ProjectCard dataId={dataId} projectsData={projectsData} darkMode={darkMode}/> }
         </div>
-        <About darkMode={darkMode}/>
         <Footer darkMode={darkMode}/>
       </div>    
     </div>

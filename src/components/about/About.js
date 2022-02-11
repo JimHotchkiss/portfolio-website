@@ -19,8 +19,8 @@ const About = ({ darkMode }) => {
   const siTwitter = <SiTwitter size={30} />
 
   return (
-    <div className={darkMode ? 'bg-white min-w-full pt-4 pb-4' :'bg-primary min-w-full pt-4 pb-4'}>
-      <div className='container'>
+    <div className={darkMode ? 'bg-white pt-4 pb-4 ' :'bg-primary  pt-4 pb-4 '}>
+      <div className='container lg:max-w-[60%]'>
         <div>
           <h2 className={darkMode ? 'text-secondary' : 'text-white'}>About Me</h2>
         </div>
@@ -30,11 +30,11 @@ const About = ({ darkMode }) => {
                     className={darkMode ? 'w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-secondary' : 'w-20 h-20 object-cover ml-auto mr-2 bg-white rounded-full border-2 border-react_blue' }
                     src={profile} alt="Profile"/>
             </div>
-            <div>
+            <div className='lg:px-2'>
                 <h2 className="text-white text-3xl font-semibold">Jimmy Hotchkiss</h2>
                 <p className="mt-2 text-gray-500">I have always been interested in the “How?” and “Why?” questions, and I have always been a creator: From the arts to software, I am at my best, when I'm creating. And software development combines these parts of me into my professional ‘sweet-spot’.</p>
             </div>
-                <div className='flex justify-around  text-gray-500 mt-4'>
+                <div className='flex justify-around  text-gray-500 mt-4 lg:max-w-[20%] lg:mx-auto '>
                     <div>
                       <a href="https://www.linkedin.com/in/jimmyhotchkiss/" target="_blank" rel="noreferrer" className='text-linkedin_blue' size={30}>{faLinkedin}</a>
                     </div> 
