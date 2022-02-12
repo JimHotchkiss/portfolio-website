@@ -14,7 +14,7 @@
         "gitUrlClient": "https://github.com/JimHotchkiss/lead-tracker-client",
         "gitUrlApi": "https://github.com/JimHotchkiss/lead-tracker-api",
         "liveDemo": null,
-        "videoDemo": null
+        "videoDemo": "https://youtu.be/YrA40e-y4nc"
       },
       {
         "id": "two",
@@ -29,7 +29,7 @@
         "gitUrlClient": "https://github.com/JimHotchkiss/project_manager",
         "gitUrlApi": null,
         "liveDemo": "https://secure-basin-53601.herokuapp.com/",
-        "videoDemo": null
+        "videoDemo": "https://youtu.be/FQ-t37p_ppg"
       },
       {
         "id": "three",
@@ -45,7 +45,7 @@
         "gitUrlClient": "https://github.com/JimHotchkiss/The_Vegan_Cow",
         "gitUrlApi": null,
         "liveDemo": null,
-        "videoDemo": null
+        "videoDemo": "https://youtu.be/vwE4soP0kss"
       },
       {
         "id": "four",
