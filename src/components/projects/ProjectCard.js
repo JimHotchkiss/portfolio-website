@@ -38,7 +38,7 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
                     <p className="mt-2 text-gray-500">{project.description}</p>
                   </div>
                   <div className={project.title === 'Lead Tracker' ? 'pt-4 pb-4' : 'hidden'}>
-                    <img src={leadTrackergif} alt="Lead Tracker" />
+                    <img src={leadTrackergif} alt="Lead Tracker" className='max-w-[92%] mx-auto'/>
                   </div>
                   <div className='flex justify-around  mt-4 lg:max-w-[30%] lg:mx-auto'>
                     {project.technologies.map(technology => {
@@ -62,8 +62,13 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
                       
                     })}
                   </div>
-                  <div key={Math.random()} className="flex justify-end mt-4 pb-4 px-4">
-                    <a target="_blank" rel="noreferrer" href={project.liveDemo ? project.liveDemo : project.gitUrlClient} className="text-xl font-medium text-indigo-500">{project.liveDemo ? 'Live Demo' : project.title === 'Tech Support App' ? null : 'Github'}</a>
+                  <div className='flex justify-start pb-4'>
+                    <div key={Math.random()} className="flex justify-end mt-4 px-4">
+                      <a target="_blank" rel="noreferrer" href={project.liveDemo ? project.liveDemo : project.gitUrlClient} className="text-xl font-medium text-indigo-500">{project.liveDemo ? 'Live Demo' : project.title === 'Tech Support App' ? null : 'Github'}</a>
+                    </div>
+                    <div key={Math.random()} className="flex justify-end mt-4 pb-4 px-4">
+                      <a target="_blank" rel="noreferrer" href={project.videoDemo ? project.videoDemo : "#"} className="text-xl font-medium text-react_blue pb-4">Video Demo</a>
+                    </div>
                   </div>
                 </div>
               </div>
