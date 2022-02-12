@@ -71,6 +71,7 @@ function App() {
       <div className={darkMode ? 'bg-gray-100' : 'bg-secondary'}>
         <About 
           handleResume={handleResume}
+          showResume={showResume}
           darkMode={darkMode}/>
         <Resume
           showResume={showResume}

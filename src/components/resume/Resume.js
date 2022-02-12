@@ -8,15 +8,16 @@ const Resume = ({ handleResume, showResume }) => {
         <div>
             <a className='' href={resumePng} download>
                 <img 
-                    className='max-w-[92%] mx-auto'
+                    className='max-w-[92%] lg:max-w-[57%] mx-auto'
                     src={resumePng} 
                     alt="Resume" />
             </a>
         </div>
-        <div className='pt-4 pb-2 container flex justify-end'>
+        <div className='pt-4 pb-2 lg:max-w-[57%] container flex justify-end'>
             <AiFillCloseCircle
+                size={20}
                 onClick={handleResume} 
-                className='text-red-500'/> 
+                className='text-red-500 hover:cursor-pointer'/> 
         </div>
       
 

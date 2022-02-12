@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
 
 
-const About = ({ darkMode, handleResume }) => {
+const About = ({ darkMode, handleResume, showResume }) => {
 
   const siReact = <SiReact size={30}/>
   const diRuby = <DiRuby size={30} />
@@ -46,8 +46,8 @@ const About = ({ darkMode, handleResume }) => {
                     </div> 
                 
                 </div>
-                <div className="flex justify-start mt-4">
-                  <h2 onClick={handleResume} className="text-xl font-medium text-indigo-500">Resume</h2>
+                <div className={showResume ? "hidden" : "flex justify-start mt-4"}>
+                  <h2 onClick={handleResume} className="text-xl font-medium text-indigo-500 hover:cursor-pointer">Resume</h2>
                 </div>
           </div>
 
