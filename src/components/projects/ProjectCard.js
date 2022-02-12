@@ -3,6 +3,8 @@ import react from '../../images/react.svg'
 import rails from '../../images/rails.svg'
 import js from '../../images/js.png'
 import leadTrackergif from '../../images/lead-tracker.gif'
+import veganCowPng from '../../images/vegan-cow.png'
+import projectManagePng from '../../images/project-manager.png'
 import { SiReact, SiJavascript, SiHtml5, SiMaterialui, SiTailwindcss, SiRubyonrails, SiCss3, SiRedux } from "react-icons/si"
 
 
@@ -37,8 +39,11 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
                     <h2 className="text-white text-3xl font-semibold">{project.title}</h2>
                     <p className="mt-2 text-gray-500">{project.description}</p>
                   </div>
-                  <div className={project.title === 'Lead Tracker' ? 'pt-4 pb-4' : 'hidden'}>
-                    <img src={leadTrackergif} alt="Lead Tracker" className='max-w-[92%] mx-auto'/>
+                  <div className={project.title === 'Tech Support App' ? 'hidden' : 'pt-4 pb-4'}>
+                    <img src={project.title === 'Lead Tracker' ? leadTrackergif :
+                              project.title === 'Vegan Cow' ? veganCowPng :
+                              project.title === 'Project Manager' ? projectManagePng :
+                              null } alt="Project" className='max-w-[92%] mx-auto'/>
                   </div>
                   <div className='flex justify-around  mt-4 lg:max-w-[30%] lg:mx-auto'>
                     {project.technologies.map(technology => {
