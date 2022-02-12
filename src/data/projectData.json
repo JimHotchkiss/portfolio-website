@@ -13,7 +13,8 @@
         "description": "This project was inspired by a situation I noticed at work: How do our sales representatives keep track of their leads. The user can create, read, update and destroy leads. Additionally, there is authentication, with a user being able to create an account and login. This is built with Rails api, for the backend, React running the frontend and Redux handling state management. I utilized the react-chartjs-2 api to most efficiently display the user's data.",
         "gitUrlClient": "https://github.com/JimHotchkiss/lead-tracker-client",
         "gitUrlApi": "https://github.com/JimHotchkiss/lead-tracker-api",
-        "liveDemo": null
+        "liveDemo": null,
+        "videoDemo": null
       },
       {
         "id": "two",
@@ -27,7 +28,8 @@
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss/project_manager",
         "gitUrlApi": null,
-        "liveDemo": "https://secure-basin-53601.herokuapp.com/"
+        "liveDemo": "https://secure-basin-53601.herokuapp.com/",
+        "videoDemo": null
       },
       {
         "id": "three",
@@ -42,7 +44,8 @@
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss/The_Vegan_Cow",
         "gitUrlApi": null,
-        "liveDemo": null
+        "liveDemo": null,
+        "videoDemo": null
       },
       {
         "id": "four",
@@ -56,7 +59,8 @@
         "description": "ates voluptatibus modi vero corporis assumenda, soluta libero aliquid impedit necessitatibus magnam dicta natus beatae laudantium hic! Tempore accusamus nulla praesentium aliquam commodi earum, aperiam est.",
         "gitUrlClient": "https://github.com/JimHotchkiss",
         "gitUrlApi": null,
-        "liveDemo": null
+        "liveDemo": null,
+        "videoDemo": null
       }
     ]
   }
