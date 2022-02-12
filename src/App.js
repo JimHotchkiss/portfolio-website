@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero'
 import Projects from './components/projects/Projects'
 import ProjectCard from './components/projects/ProjectCard';
 import About from './components/about/About';
+import Resume from './components/resume/Resume'
 import Footer from './components/common/Footer'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   const [isFourBtn, setIsFourBtn] = useState(false)
   const [dataId, setDataId] = useState('')
   const [projectsData, setProjectsData] = useState(data)
+  const [showResume, setShowResume] = useState(false)
   const [currentBtn, setCurrentBtn] = useState('')
   // const [btnToggle, setBtnToggle] = useState(false)
   
@@ -55,6 +57,10 @@ function App() {
   const handleDarkMode = () => {
     setDarkMode(!darkMode)
   }
+
+  const handleResume = () => {
+    setShowResume(!showResume)
+  }
   return (
     <div className=''>
        {console.log(currentBtn, darkMode)}
@@ -63,7 +69,12 @@ function App() {
         handleDarkMode={handleDarkMode}
       />
       <div className={darkMode ? 'bg-gray-100' : 'bg-secondary'}>
-        <About darkMode={darkMode}/>
+        <About 
+          handleResume={handleResume}
+          darkMode={darkMode}/>
+        <Resume
+          showResume={showResume}
+          handleResume={handleResume} />
         <div className=''>
           <Projects 
             isOneBtn={isOneBtn}

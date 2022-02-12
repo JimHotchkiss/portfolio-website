@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
 
 
-const About = ({ darkMode }) => {
+const About = ({ darkMode, handleResume }) => {
 
   const siReact = <SiReact size={30}/>
   const diRuby = <DiRuby size={30} />
@@ -34,20 +34,20 @@ const About = ({ darkMode }) => {
                 <h2 className="text-white text-3xl font-semibold">Jimmy Hotchkiss</h2>
                 <p className="mt-2 text-gray-500">I have always been interested in the “How?” and “Why?” questions, and I have always been a creator: From the arts to software, I am at my best, when I'm creating. And software development combines these parts of me into my professional ‘sweet-spot’.</p>
             </div>
-                <div className='flex justify-around  text-gray-500 mt-4 lg:max-w-[20%] lg:mx-auto '>
+                <div className='flex justify-start  text-gray-500 mt-4 lg:max-w-[20%] lg:mx-auto '>
                     <div>
                       <a href="https://www.linkedin.com/in/jimmyhotchkiss/" target="_blank" rel="noreferrer" className='text-linkedin_blue' size={30}>{faLinkedin}</a>
                     </div> 
-                    <div>
+                    <div className='pl-6'>
                       <a href="https://github.com/JimHotchkiss" target="_blank" rel="noreferrer" className='text-gray-100' size={30}>{aiFillGithub}</a>
                     </div> 
-                    <div>
+                    <div className='pl-6'>
                       <a href="https://twitter.com/jh8up" target="_blank" rel="noreferrer" className='text-react_blue' size={30}>{siTwitter}</a>
                     </div> 
                 
                 </div>
-                <div className="flex justify-end mt-4">
-                  <a target="_blank" rel="noreferrer" href="#" className="text-xl font-medium text-indigo-500">CV</a>
+                <div className="flex justify-start mt-4">
+                  <h2 onClick={handleResume} className="text-xl font-medium text-indigo-500">Resume</h2>
                 </div>
           </div>
 
