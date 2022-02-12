@@ -71,7 +71,7 @@ const ProjectCard = ({ projectsData, dataId, darkMode }) => {
                     <div key={Math.random()} className="flex justify-end mt-4 px-4">
                       <a target="_blank" rel="noreferrer" href={project.liveDemo ? project.liveDemo : project.gitUrlClient} className="text-xl font-medium text-indigo-500">{project.liveDemo ? 'Live Demo' : project.title === 'Tech Support App' ? null : 'Github'}</a>
                     </div>
-                    <div key={Math.random()} className="flex justify-end mt-4 pb-4 px-4">
+                    <div key={Math.random()} className={project.title === "Tech Support App" ? "hidden" : "flex justify-end mt-4 pb-4 px-4"}>
                       <a target="_blank" rel="noreferrer" href={project.videoDemo ? project.videoDemo : "#"} className="text-xl font-medium text-react_blue pb-4">Video Demo</a>
                     </div>
                   </div>
