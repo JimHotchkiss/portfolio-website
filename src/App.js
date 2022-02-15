@@ -76,6 +76,7 @@ function App() {
         <Resume
           showResume={showResume}
           handleResume={handleResume} />
+        
         <div className=''>
           <Projects 
             isOneBtn={isOneBtn}
