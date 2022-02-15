@@ -4,7 +4,7 @@ import {AiFillCloseCircle} from 'react-icons/ai'
 
 const Resume = ({ handleResume, showResume }) => {
   return (
-    <div className={showResume ? 'bg-primary pb-4' : 'hidden'}>
+    <div className={showResume ? 'bg-primary pb-4 pt-4' : 'hidden'}>
         <div>
             <a className='' href={resumePng} download>
                 <img 

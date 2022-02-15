@@ -42,7 +42,7 @@ const About = ({ darkMode, handleResume, showResume }) => {
                       <a href="https://github.com/JimHotchkiss" target="_blank" rel="noreferrer" className='text-gray-100' size={30}>{aiFillGithub}</a>
                     </div> 
                     <div className='pl-6'>
-                      <a href="https://twitter.com/jh8up" target="_blank" rel="noreferrer" className='text-react_blue' size={30}>{siTwitter}</a>
+                      <a href="https://twitter.com/jh8up" target="_blank" rel="noreferrer" className='text-twitter_blue' size={30}>{siTwitter}</a>
                     </div> 
                 
                 </div>

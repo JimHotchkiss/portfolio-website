@@ -31,7 +31,8 @@ module.exports = {
         primary: '#0f172a',
         secondary: '#1e293b',
         react_blue: '#63dbfb',
-        linkedin_blue: '#1064c4'
+        linkedin_blue: '#1064c4',
+        twitter_blue: '#1c87ec'
       }
     },
   },

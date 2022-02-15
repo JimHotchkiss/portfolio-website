@@ -46,6 +46,7 @@ const Projects = ({ darkMode, handleBtn, isOneBtn, isTwoBtn, isThreeBtn, isFourB
                 iconText="Tech Support"
                 darkMode={darkMode}/>
         </div>
+
     </div>);
 };
 
